@@ -16,7 +16,7 @@ class Terminus < Formula
   def install
     ENV.deparallelize
     system "composer install"
-    #system "composer phar:build"
+    system "composer phar:build"
     bin.install "t3" => "t3"
   end
 
