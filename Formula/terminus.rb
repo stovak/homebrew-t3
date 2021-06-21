@@ -8,7 +8,7 @@ class Terminus < Formula
   url "https://github.com/pantheon-systems/terminus/archive/refs/tags/3.0.0-alpha6.tar.gz"
   sha256 "60a9dd625625a9b2dea5f8b4ce7cb23c365798773e1c110a02a19735057fcfdb"
   version "3.0.0-alpha6"
-  
+
   depends_on "php@7.4"
   depends_on "composer"
   depends_on "git"
@@ -21,6 +21,6 @@ class Terminus < Formula
   end
 
   test do
-    system "touch t3"
+    system "true"
   end
 end
