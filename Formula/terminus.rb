@@ -14,9 +14,6 @@ class Terminus < Formula
   depends_on "git"
 
   def install
-    ENV.deparallelize
-    system "composer install"
-    system "composer phar:build"
     bin.install "t3" => "t3"
   end
 
